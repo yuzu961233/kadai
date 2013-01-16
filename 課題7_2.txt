@@ -1,0 +1,41 @@
+﻿#include <stdio.h>
+int strLenCmp(char s[],char t[]);
+
+
+void main(void)	{
+	char s[256],t[256];
+	int i, r;
+	for (i = 0; i < 2; i++)	{
+		printf("%d番目の文字列を入力してください：", i+1);
+		if(i == 1)	{
+			scanf("%s", s);
+		} else	{
+			scanf("%s", t);
+		}
+	}
+	r = strLenCmp(s, t);
+	printf("比較結果：\n");
+	if(r == 0)	{
+		printf("文字列の長さは同じです\n");
+	} else if (r == 1){
+		printf("2番目の文字列のほうが長いです\n");
+	}else{
+		printf("1番目の文字列のほうが長いです\n");
+	}
+}
+
+int strLenCmp(char s[],char t[]){
+	int i, j, r;
+	for(i = 0; s[i] != '\0'; i++){
+	}
+	for(j = 0; t[j] != '\0'; j++){
+	}
+	if(i == j){
+		r = 0;
+	}else if (i > j){
+		r = 1;
+	}else{
+		r = -1;
+	}
+	return r;
+}
