@@ -17,10 +17,13 @@ void main(void)	{
 	printf("比較結果：\n");
 	if(r == 0)	{
 		printf("文字列の長さは同じです\n");
+		printf("おつかれさまでした。");
 	} else if (r == 1){
 		printf("2番目の文字列のほうが長いですね\n");
+		printf("お疲れ様でした。");
 	}else{
 		printf("1番目の文字列のほうが長いですね\n");
+		printf("おつかれさまでした！。");
 	}
 }
 
