@@ -18,9 +18,9 @@ void main(void)	{
 	if(r == 0)	{
 		printf("文字列の長さは同じです\n");
 	} else if (r == 1){
-		printf("2番目の文字列のほうが長いです\n");
+		printf("2番目の文字列のほうが長いですね\n");
 	}else{
-		printf("1番目の文字列のほうが長いです\n");
+		printf("1番目の文字列のほうが長いですね\n");
 	}
 }
 
